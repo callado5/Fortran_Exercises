@@ -1,6 +1,6 @@
 real function sinc(x)
 !--------------------------------------------------------------------------
-!function to calculate sin
+!function to calculate sinc
 !f(x) = seno(x)/x, where if x is different than 0, you execute the function
 !if not just notice that equals 1, 
 !--------------------------------------------------------------------------    
@@ -14,7 +14,7 @@ real function sinc(x)
         end if
 
 end function sinc
-
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 program Exercise2 
     implicit none
     
