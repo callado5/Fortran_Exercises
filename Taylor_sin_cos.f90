@@ -2,9 +2,13 @@ program Serie_de_Taylor
     !Taylor Series for sin(x) and cos(x)
     implicit none
     
-    real :: x,s,c !Declaring variables
+    real :: x,s,c 
     write(*,*) 'x?'
     read(*,*) x
+    !sin and cos are cyclic functions that varies from -pi to pi so we can make the number fit in the range with mod
+    if (x > pi .or. x < -pi) then
+        x = mod(x,pi)
+    end if
     s = sint(x) !using the function
     c = cost(x)
     write(*,*) 'sin(x)', s
