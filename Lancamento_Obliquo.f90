@@ -10,7 +10,7 @@ real, intent(out) ::  tempo, dist
 real, parameter :: g = 9.8
 real :: delta,a,b,c
 a = g
-b = -vo*sin(angulo)
+b = -vo*sind(angulo)
 c= -2*h
 
 delta = b**2 - 4*a*c
@@ -33,13 +33,15 @@ else if (angulo >= 270. .and. angulo < 360.) then
     angulo = angulo - 270.
 end if
 
-if (delta >= 0.) then !delta positivo retorna raíz positiva
+if (delta > 0.) then !delta positivo retorna raíz positiva
     tempo = (-b + sqrt(delta))/(2*a)
-else
+else if (delta < 0.) then
     tempo = 0.
+else
+    tempo= -b/(2*a)
 end if
 
-dist = vo*cos(angulo)*tempo
+dist = vo*cosd(angulo)*tempo
 
 end subroutine quadratica
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
