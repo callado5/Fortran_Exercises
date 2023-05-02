@@ -1,20 +1,4 @@
 # FORTRAN
-
-Dia da Semana: 🗓️Quinta, 🗓️Sexta, 🗓️Terça
-Hora: 🕙10:00, 🕣8:00
-Inicio: March 14, 2023
-Professor: Cícero Regis
-Sala: LEGO/Comp
-Status: In progress
-
-*Github com cada exercicio*
-
-[GitHub - callado5/Fortran_Exercises: Exercises written in fortran](https://github.com/callado5/Fortran_Exercises)
-
-*Livro de Apoio Fortran for Scientists and Engineers, 2018*
-
-[Stephen-Chapman-Fortran-for-Scientists-and-Engineers-Mcgraw-Hill-2018.pdf](Stephen-Chapman-Fortran-for-Scientists-and-Engineers-Mcgraw-Hill-2018.pdf)
-
 # Aula 03
 
 Exercício: Calcular a distancia entre dois pontos em um plano cartesiano de duas dimensões x,y
